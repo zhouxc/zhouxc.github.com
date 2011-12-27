@@ -1,0 +1,7 @@
+auto:        true
+server_port: 3000
+safe:        true
+lsi:         false
+pygments:    true
+markdown:    rdiscount
+permalink:   /:year/:month/:title

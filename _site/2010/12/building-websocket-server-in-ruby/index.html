@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      imanel.org
+      
+        &raquo; Building WebSocket server in Ruby
+      
+    </title>
+    <link rel="shortcut icon" href="http://imanel.org/favicon.ico" />
+    <link rel='index' title='imanel.org' href='http://imanel.org/' />
+    <link rel="alternate" type="application/rss+xml" title="Imanel's Blog" href="http://feeds.feedburner.com/imanel" />
+    <link rel="stylesheet" href="/css/screen.css" />
+    <link rel="stylesheet" href="/css/syntax.css" />
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1><span>Hello, I&rsquo;m <strong>Bernard Potocki</strong></span></h1>
+
+        <a href="#" id="menu" title="Menu">Menu</a>
+
+        <ul>
+          <li><a href="/" id="homepage">imanel.org</a></li>
+          <li><a href="http://github.com/imanel" id="github">imanel</a></li>
+          <li><a href="http://twitter.com/_imanel" id="twitter">_imanel</a></li>
+        </ul>
+      </header>
+
+      <div id="main">
+        <article>
+          <h2>Building WebSocket server in Ruby</h2>
+
+<p><a href="http://showmetheco.de/articles/2010/11/timtow-to-build-a-websocket-server-in-perl.html">Vti's post</a> about building WebSocket server inspired me to write another one, but this time about both server and client in Ruby.</p>
+
+<p>Currently we have couple of great implementations of WebSocket in Ruby - <a href="http://github.com/igrigorik/em-websocket">em-websocket</a>, <a href="http://github.com/gimite/web-socket-ruby">web-socket-ruby</a> or <a href="http://rainbows.rubyforge.org/sunshowers">sunshowers</a> to name a few. And looking at each one of them I can see two things - they all are great, and they all are alone. What I mean?</p>
+
+<p><a href="http://github.com">Github</a> alone says that there are 40 projects in Ruby connected to WebSocket. Some of them are basing one on another, but there are more than 15 server implementations from scratch. Only two support both Draft 75 and Draft 76. And only one support newer drafts. Am I only one who see the problem?</p>
+
+<p>That's why I built <a href="http://github.com/imanel/libwebsocket">LibWebSocket</a> library whose main purpose is to eliminate the problem of aging server implementations - wrapper around multiple drafts of WebSocket with common API that any server implementation can build against. Thank's to that whole community will be able to gain instead of working independently. So how to get started?</p>
+
+<h3>Building server</h3>
+
+<p>Currently most popular Ruby WebSocket server is em-websocket(I'm also using it in my <a href="http://github.com/socky">Socky</a> project) and I believe that currently it's the best implementation. So why don't start from building similar server which just couple of lines instead of huge library?</p>
+
+<p>Liquid error: undefined method `join' for #&lt;String:0xb72f25a8></p>
+
+<p>And that's all! Of course it's just simplified implementation, but I think that shows what I'm talking about. No more handling events, checking version and implementing multiple drafts - it's all inside! And together with that we can also build client:</p>
+
+<h3>Building client</h3>
+
+<p>This one is more tricky but still most work is handled by LibWebsocket:</p>
+
+<p>Liquid error: undefined method `join' for #&lt;String:0xb72f2210></p>
+
+<p>This will allow to connecting, sending and receiving messages from WebSocket server in drafts #75 and #76(more vesions comming)</p>
+
+<h3>State and future</h3>
+
+<p><a href="http://github.com/imanel/libwebsocket">LibWebSocket</a> is currently in very early state of development but I hope that it will move fast to stable version. You can now install it as gem and start using:</p>
+
+<p>Liquid error: undefined method `join' for "\ngem install libwebsocket\n":String</p>
+
+<p>See project at github: <a href="http://github.com/imanel/libwebsocket">http://github.com/imanel/libwebsocket</a></p>
+
+
+<div id="disqus_thread"></div>
+
+        </article>
+
+        <aside>
+          <nav>
+            <ul>
+              <li>
+                <a href="/">Homepage</a>
+              </li>
+              
+                <li>
+                  <a href="/2011/04/how-to-install-mysql-ruby-gem-in-os-x-snow-leopard">How to install MySQL Ruby gem in OS X Snow Leopard</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/12/building-websocket-server-in-ruby">Building WebSocket server in Ruby</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/10/socky-announcement">Socky Announcement</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/07/css3-in-every-browser-with-sass-and-pie">CSS3 in every browser with SASS and PIE</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/06/web-standards-in-mobile-browsers">Web standards in mobile browsers</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/03/cucumber-testing-for-multiple-users-continuation">Cucumber testing for multiple users - continuation</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/01/testing-juggernaut-using-cucumber-and-selenium">Testing Juggernaut using Cucumber and Selenium</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/01/accents-in-sphinx">Accents in Sphinx</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/01/ruby-flavored-shoes">Ruby-flavored shoes</a>
+                </li>
+              
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+
+      <footer>
+        <p>Copyright &copy; 2011 All Rights Reserved</p>
+      </footer>
+    </div>
+
+    <script src="/js/application.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Imanel's blog</title>
+ <link href="http://imanel.org/atom.xml" rel="self"/>
+ <link href="http://imanel.org/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://imanel.org/</id>
+ <author>
+   <name>Bernard Potocki</name>
+   <email>bernard.potocki@imanel.org</email>
+ </author>
+
+ {% for post in site.posts limit: 15 %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://imanel.org{{ post.url }}/"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://imanel.org{{ post.url }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>

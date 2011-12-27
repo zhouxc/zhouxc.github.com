@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      imanel.org
+      
+        &raquo; Web standards in mobile browsers
+      
+    </title>
+    <link rel="shortcut icon" href="http://imanel.org/favicon.ico" />
+    <link rel='index' title='imanel.org' href='http://imanel.org/' />
+    <link rel="alternate" type="application/rss+xml" title="Imanel's Blog" href="http://feeds.feedburner.com/imanel" />
+    <link rel="stylesheet" href="/css/screen.css" />
+    <link rel="stylesheet" href="/css/syntax.css" />
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1><span>Hello, I&rsquo;m <strong>Bernard Potocki</strong></span></h1>
+
+        <a href="#" id="menu" title="Menu">Menu</a>
+
+        <ul>
+          <li><a href="/" id="homepage">imanel.org</a></li>
+          <li><a href="http://github.com/imanel" id="github">imanel</a></li>
+          <li><a href="http://twitter.com/_imanel" id="twitter">_imanel</a></li>
+        </ul>
+      </header>
+
+      <div id="main">
+        <article>
+          <h2>Web standards in mobile browsers</h2>
+
+<p>For the past few weeks I focused on developing <a href="http://github.com/socky/socky-server-ruby">Socky</a> - new WebSocket based push server for Ruby on Rails. Its main advantage was to be working well in places where there is no flash - like iPhone or iPad. It is therefore obvious that I became very sensitive to standard implementation in so called "modern browsers" - also mobile ones. So, taking the opportunity of just released iOS4, I decided to write a few words about standard support in mobile browsers.</p>
+
+<p>First tested was the latest iOS4 - loudly advertised as a strong HTML5 supporter. A set of rapid tests showed that the most important elements actually works flawlessly - audio and video, geolocation or SVG. Also, elements such as CSS 3 border-radius, CSS animations and reflections are working properly. But the most important feature for me, WebSockets, is missing. I don't understand why this protocol isn't there, when in lately released Safari 5 it wasn't issue. So how are users of the system be able to use chat, or HTML multiplayer games? There is also no support for @font-face or Web Workers. Maybe we see in the near future?</p>
+
+<p>The second largest mobile system is Android - I tested version 2.2(not yet available everywhere). It's not disappointing - most of the tests passed without error. As in the iOS audio and video tags work properly, geolocation and CSS 3 too, and, moreover, does @font-face. Unfortunately, there also is no support for WebSocket (which Google Chrome has for a long time) - but fortunately, working flash eliminates this problem (thanks to <a href="http://github.com/gimite/web-socket-js">web-socket-js</a>) I was surprised by the lack of SVG support - I understand that this is a very processor aggravating technology, but lack of it is very arduous.</p>
+
+<p>Last discussed system is a WebOS version 1.4.1 (there should be new version 1.4.5 in the next few days) - system is based entirely on HTML and CSS, so you would expect the best support for standards. Unfortunately, there is some disappointment - most of the tests pass, but from presented systems this one have highest number of unsupported technology - @font-face, WebSockets, SVG, and geolocation. Hopefully the next update will improve browser a little.</p>
+
+<p>All tests were performed using a <a href="http://www.modernizr.com">Modernizr</a>, and some of them tested manually (audio, video, WebSockets and geolocation)</p>
+
+
+<div id="disqus_thread"></div>
+
+        </article>
+
+        <aside>
+          <nav>
+            <ul>
+              <li>
+                <a href="/">Homepage</a>
+              </li>
+              
+                <li>
+                  <a href="/2011/04/how-to-install-mysql-ruby-gem-in-os-x-snow-leopard">How to install MySQL Ruby gem in OS X Snow Leopard</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/12/building-websocket-server-in-ruby">Building WebSocket server in Ruby</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/10/socky-announcement">Socky Announcement</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/07/css3-in-every-browser-with-sass-and-pie">CSS3 in every browser with SASS and PIE</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/06/web-standards-in-mobile-browsers">Web standards in mobile browsers</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/03/cucumber-testing-for-multiple-users-continuation">Cucumber testing for multiple users - continuation</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/01/testing-juggernaut-using-cucumber-and-selenium">Testing Juggernaut using Cucumber and Selenium</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/01/accents-in-sphinx">Accents in Sphinx</a>
+                </li>
+              
+                <li>
+                  <a href="/2010/01/ruby-flavored-shoes">Ruby-flavored shoes</a>
+                </li>
+              
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+
+      <footer>
+        <p>Copyright &copy; 2011 All Rights Reserved</p>
+      </footer>
+    </div>
+
+    <script src="/js/application.js"></script>
+  </body>
+</html>
