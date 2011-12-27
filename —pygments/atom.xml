@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Imanel's blog</title>
+ <link href="http://imanel.org/atom.xml" rel="self"/>
+ <link href="http://imanel.org/"/>
+ <updated>2011-12-27T20:42:37+08:00</updated>
+ <id>http://imanel.org/</id>
+ <author>
+   <name>Bernard Potocki</name>
+   <email>bernard.potocki@imanel.org</email>
+ </author>
+
+ 
+
+</feed>
